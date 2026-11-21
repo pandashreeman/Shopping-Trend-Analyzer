@@ -1,0 +1,259 @@
+
+/* =========================================
+   SHOPPING TREND ANALYZER
+   Theme: Burgundy + Baby Pink
+========================================= */
+
+/* Main Background */
+.stApp {
+    background-color: #FCE7EF;
+}
+
+/* Hide Automatic Navigation */
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+/* =========================================
+   SIDEBAR
+========================================= */
+
+[data-testid="stSidebar"] {
+    background-color: #F4B6CC;
+}
+
+[data-testid="stSidebar"] h1 {
+    color: #4A1028;
+    font-weight: 700;
+}
+
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+    color: #4A1028;
+}
+
+[data-testid="stSidebar"] .stRadio label {
+    color: #4A1028;
+    font-weight: 500;
+}
+
+[data-testid="stSidebar"] .stRadio label:has(input:checked) {
+    color: #800F3F;
+    font-weight: 700;
+}
+
+[data-testid="stSidebar"] .stButton button {
+    background-color: #800F3F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
+[data-testid="stSidebar"] .stButton button:hover {
+    background-color: #4A1028;
+    color: white;
+}
+
+/* =========================================
+   LOGIN AND REGISTRATION
+========================================= */
+
+.auth-title {
+    text-align: center;
+    color: #800F3F;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #704050;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Authentication Form Card */
+[data-testid="stForm"] {
+    background-color: #FFFFFF;
+    padding: 28px;
+    border: 1px solid #F4B6CC;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(128, 15, 63, 0.10);
+}
+
+/* =========================================
+   DASHBOARD HEADER
+========================================= */
+
+.dashboard-header {
+    background: linear-gradient(135deg, #4A1028, #800F3F);
+    padding: 28px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+    color: white;
+}
+
+.dashboard-header p {
+    color: #F4B6CC;
+}
+
+/* =========================================
+   METRIC CARDS
+========================================= */
+
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    padding: 22px;
+    border-radius: 15px;
+    border: 1px solid #F4B6CC;
+    box-shadow: 0 3px 10px rgba(128, 15, 63, 0.08);
+    transition: all 0.3s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(128, 15, 63, 0.18);
+    border-color: #800F3F;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #800F3F;
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: #4A1028;
+    font-weight: 700;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.stButton button,
+.stFormSubmitButton button,
+.stDownloadButton button {
+    background-color: #800F3F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton button:hover,
+.stFormSubmitButton button:hover,
+.stDownloadButton button:hover {
+    background-color: #4A1028;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input {
+    border: 1px solid #F4B6CC;
+    border-radius: 8px;
+    color: #4A1028;
+    background-color: #FFFFFF;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus {
+    border-color: #800F3F;
+}
+
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+/* =========================================
+   TABLES
+========================================= */
+
+[data-testid="stDataFrame"] {
+    border: 1px solid #F4B6CC;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+[data-testid="stDataFrame"] button {
+    color: #800F3F;
+}
+
+/* =========================================
+   HEADINGS AND DIVIDERS
+========================================= */
+
+h1, h2, h3 {
+    color: #800F3F;
+    font-weight: 700;
+}
+
+hr {
+    border-color: #F4B6CC;
+}
+
+/* =========================================
+   GENERAL PAGE STYLING
+========================================= */
+
+.main-title {
+    text-align: center;
+    color: #800F3F;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+/* =========================================
+   REMOVE WHITE TOP HEADER
+========================================= */
+
+[data-testid="stHeader"] {
+    background-color: #FCE7EF !important;
+    border-bottom: none !important;
+}
+
+[data-testid="stToolbar"] {
+    background-color: #FCE7EF !important;
+}
+
+[data-testid="stDecoration"] {
+    background-color: #800F3F !important;
+}
+
+.stAppViewContainer {
+    background-color: #FCE7EF;
+}
+
+/* =========================================
+   AUTHENTICATION PAGE SIDEBAR
+========================================= */
+
+.auth-page [data-testid="stSidebar"] {
+    display: none !important;
+}
+
+.auth-page [data-testid="collapsedControl"] {
+    display: none !important;
+}
+
+[data-testid="stSidebar"] button[kind="secondary"]:last-child {
+    color: #FFFFFF !important;
+}
+
+[data-testid="stSidebar"] button[kind="secondary"] {
+    color: #FFFFFF !important;
+}
+
+[data-testid="stSidebar"] button[kind="secondary"] p {
+    color: #FFFFFF !important;
+}
